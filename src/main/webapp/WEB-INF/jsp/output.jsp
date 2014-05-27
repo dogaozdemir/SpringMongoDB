@@ -35,18 +35,20 @@
  <c:forEach var="user" items="${userList}">
 			<tr>
 				<%-- <td><input type="hidden" value="${user.id}" id="userId"></td> --%>
-				<td><input type="text" value="${user.userName}" id="userNameN" name="userNameN"></td>
-				<td><input type="text" value="${user.surName}" id="surNameN"></td>
-				<td><input type="text" value="${user.phoneNumber}" id="phoneNumberN"></td>
+				<td><input type="text" value="${user.userName}" id="userNameN_${user.id}" name="userNameN"></td>
+				<td><input type="text" value="${user.surName}" id="surNameN_${user.id}"></td>
+				<td><input type="text" value="${user.phoneNumber}" id="phoneNumberN_${user.id}"  class="phoneMask"></td>
 				<td><input type="button" value="delete" class="button_example"
 					onclick=" window.location='user/delete?id=${user.id}'" /></td>
 				
 				<td><input type="button" value="update" class="button_example"
-					onclick="window.location='user/update?id=${user.id}&name=${user.userName}&surname=${user.surName}&phone=${user.phoneNumber}'" /></td>
+					onclick="update('${user.id}')" /></td>
 			</tr>
 		</c:forEach>
-		
+		<!--window.location='user/update?id=${user.id}&name=${user.userName}&surname=${user.surName}&phone=${user.phoneNumber}'  -->
 </table>	
 </form>
+
+
 </body>
 </html>
