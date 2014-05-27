@@ -24,10 +24,9 @@
 		<tr>
 			<input type="text" id="phoneNumber" name="phoneNumber"
 				required="required" />
-			<script type="text/javascript">DrawBotBoot()</script>
-			?
+			
 
-			<input type="submit" class="button_example" value="Submit" onclick="alert(ValidBotBoot());" />
+			<input type="submit"  value="Submit"  />
 		</tr>
 	</form>
 
