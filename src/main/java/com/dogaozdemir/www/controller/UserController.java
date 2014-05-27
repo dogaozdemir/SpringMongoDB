@@ -47,14 +47,14 @@ public class UserController {
 	
 
 	
-	 @RequestMapping(value = "/user/update", method = RequestMethod.POST)  
+	 @RequestMapping(value = "/user/update", method = RequestMethod.GET)  
 	    public View updateUser(@RequestParam String id,@RequestParam String name,@RequestParam String surname,@RequestParam String phone, ModelMap model) {
 		 
 		 User user=userService.getUser(id);
 		 user.setUserName(name);
 		 user.setSurName(surname);
 		 user.setPhoneNumber(phone);
-	       userService.updateUser(user);
+		 userService.updateUser(user);
 	      
 	        return new RedirectView("/SpringMongo/user");  
 	    }
