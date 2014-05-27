@@ -6,11 +6,13 @@
 <script type="text/javascript">
 
 function update(txt){
+	if(confirm('UPDATE?')){
 	var name=document.getElementById('userNameN_'+txt).value;
 	var surname=document.getElementById('surNameN_'+txt).value;
 	var phone=document.getElementById('phoneNumberN_'+txt).value;
 	
 	window.location='user/update?id='+txt+'&name='+name+'&surname='+surname+'&phone='+phone+'' ;
+	}
 }
 
 (function($){
