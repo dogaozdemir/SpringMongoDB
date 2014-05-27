@@ -40,7 +40,7 @@
 				<td><input type="text" value="${user.phoneNumber}" id="phoneNumberN"></td>
 				<td><input type="button" value="delete" class="button_example"
 					onclick=" window.location='user/delete?id=${user.id}'" /></td>
-					<!-- onmousedown=" return confirm('are you sure?');" -->
+				
 				<td><input type="button" value="update" class="button_example"
 					onclick="window.location='user/update?id=${user.id}&name=${user.userName}&surname=${user.surName}&phone=${user.phoneNumber}'" /></td>
 			</tr>
