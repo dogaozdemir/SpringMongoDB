@@ -26,7 +26,7 @@
 				required="required" />
 			
 
-			<input type="submit"  value="Submit"  />
+			<input type="submit"  value="Save"  />
 		</tr>
 	</form>
 
