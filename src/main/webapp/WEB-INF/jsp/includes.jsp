@@ -5,6 +5,14 @@
  
 <script type="text/javascript">
 
+function update(txt){
+	var name=document.getElementById('userNameN_'+txt).value;
+	var surname=document.getElementById('surNameN_'+txt).value;
+	var phone=document.getElementById('phoneNumberN_'+txt).value;
+	
+	window.location='user/update?id='+txt+'&name='+name+'&surname='+surname+'&phone='+phone+'' ;
+}
+
 (function($){
 
 	jQuery.fn.ebcaptcha = function(options){
@@ -68,6 +76,8 @@
 	 jQuery(function($){
 		
 	 $("#phoneNumber").mask("(999) 999-9999");
+	 $(".phoneMask").mask("(999) 999-9999");
+	 
 	 
 	 });
 </script>
