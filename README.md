@@ -26,6 +26,8 @@ JQuery
     -updateUser
     -getUser
     
+Main page is output.jsp . includes.jsp file has css,javascript,taglib areas.
+    
   
 
 
