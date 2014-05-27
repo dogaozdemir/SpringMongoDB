@@ -42,6 +42,8 @@ public class UserDaoImpl implements UserDao{
 		query3.addCriteria(Criteria.where("id").is(user.getId()));
 		Update update3 = new Update();
 		update3.set("userName", user.getUserName());
+		update3.set("surName", user.getSurName());
+		update3.set("phoneNumber", user.getPhoneNumber());
 		 mongoTemplate.updateFirst(query3, update3, COLLECTION_NAME);
 	}
 	
