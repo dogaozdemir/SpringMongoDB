@@ -45,7 +45,7 @@
 					onclick="update('${user.id}')" /></td>
 			</tr>
 		</c:forEach>
-		<!--window.location='user/update?id=${user.id}&name=${user.userName}&surname=${user.surName}&phone=${user.phoneNumber}'  -->
+	
 </table>	
 </form>
 
