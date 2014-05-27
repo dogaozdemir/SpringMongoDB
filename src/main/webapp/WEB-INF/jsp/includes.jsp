@@ -12,7 +12,7 @@
 		var element = this; 
 		var submit = $(this).find('input[type=submit]');
 		$('<label id="ebcaptchatext"></label>').insertBefore(submit);
-		$('<input type="text" class="textbox" id="ebcaptchainput"/><br/><br/>').insertBefore(submit);
+		$('<input type="text" class="textbox" id="ebcaptchainput" placeholder="Your answer is..."/><br/><br/>').insertBefore(submit);
 		var input = this.find('#ebcaptchainput'); 
 		var label = this.find('#ebcaptchatext'); 
 		
@@ -27,7 +27,7 @@
 		randomNr1 = Math.floor(Math.random()*10);
 		randomNr2 = Math.floor(Math.random()*10);
 		totalNr = randomNr1 + randomNr2;
-		var texti = "What is "+randomNr1+" + "+randomNr2 +"=";
+		var texti = ""+randomNr1+" + "+randomNr2 +"=";
 		$(label).text(texti);
 		
 	
